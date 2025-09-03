@@ -66,6 +66,12 @@ body {
     color: #22d3ee;
 }
 
+/* Active state for current section link */
+.nav-link.active {
+    color: #22d3ee;
+    font-weight: 600;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -204,6 +210,11 @@ body {
 .hero-social a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
+}
+
+/* Offset anchor scroll for fixed navbar */
+section[id] {
+    scroll-margin-top: 90px;
 }
 
 /* About Section */
