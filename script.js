@@ -27,17 +27,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function onScroll() {
         navbarHeight = navbar ? navbar.offsetHeight : 0;
-        var scrollPos = window.scrollY + navbarHeight + 10;
+        var scrollPos = window.scrollY + navbarHeight + 20;
         var currentId = sections.length > 0 ? sections[0].id : '';
 
         for (var i = 0; i < sections.length; i++) {
             var sec = sections[i];
             var top = sec.offsetTop;
-            var bottom = top + sec.offsetHeight;
-            if (scrollPos >= top && scrollPos < bottom) {
+            if (scrollPos >= top) {
                 currentId = sec.id;
-                break;
             }
+        }
+
+        // Ensure Contact highlights when at (or near) the bottom of the page
+        var viewportBottom = window.scrollY + window.innerHeight;
+        var docHeight = Math.max(
+            document.body.scrollHeight,
+            document.documentElement.scrollHeight
+        );
+        if (viewportBottom >= docHeight - 2 && linkById['contact']) {
+            currentId = 'contact';
         }
         setActiveNav(currentId);
     }
