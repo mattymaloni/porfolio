@@ -144,6 +144,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .hero {
+        padding-top: 120px; /* push content below fixed header and show avatar fully */
+    }
     .hero-container {
         flex-direction: column;
         text-align: center;
