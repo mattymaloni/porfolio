@@ -419,8 +419,7 @@ section[id] {
 }
 
 .project-image img[src*="icon.png"] {
-    object-fit: contain;
-    padding: 2rem;
+    object-position: center 60%;
 }
 
 .project-icon {
