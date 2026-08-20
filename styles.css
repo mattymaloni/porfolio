@@ -275,10 +275,6 @@ section[id] {
   box-shadow: 0 0 0 1px var(--border-strong), 0 20px 40px -12px rgba(0, 0, 0, 0.6);
 }
 
-.hero-eyebrow {
-  margin-bottom: 1.1rem;
-}
-
 .hero-title {
   font-size: clamp(2.1rem, 4.2vw, 3.3rem);
   font-weight: 700;
@@ -1172,8 +1168,7 @@ section[id] {
   opacity: 0;
 }
 
-.hero-eyebrow { animation-delay: 0.05s; }
-.hero-title { animation-delay: 0.12s; }
+.hero-title { animation-delay: 0.05s; }
 .hero-subtitle { animation-delay: 0.2s; }
 .hero-description { animation-delay: 0.28s; }
 .hero-buttons { animation-delay: 0.4s; }
