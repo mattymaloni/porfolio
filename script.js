@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        // Ensure Contact highlights when at (or near) the bottom of the page
         var viewportBottom = window.scrollY + window.innerHeight;
         var docHeight = Math.max(
             document.body.scrollHeight,
@@ -57,19 +56,71 @@ document.addEventListener('DOMContentLoaded', function () {
     var hamburger = document.querySelector('.hamburger');
     var navMenu = document.querySelector('.nav-menu');
 
+    var navBackdrop = document.querySelector('.nav-backdrop');
+
+    function closeMenu() {
+        navMenu.classList.remove('active');
+        hamburger.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        if (navBackdrop) navBackdrop.classList.remove('active');
+    }
+
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', function () {
-            navMenu.classList.toggle('active');
+            var isOpen = navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active', isOpen);
+            hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            if (navBackdrop) navBackdrop.classList.toggle('active', isOpen);
         });
         navLinks.forEach(function (link) {
-            link.addEventListener('click', function () {
-                navMenu.classList.remove('active');
-            });
+            link.addEventListener('click', closeMenu);
         });
+        if (navBackdrop) {
+            navBackdrop.addEventListener('click', closeMenu);
+        }
     }
 
     window.addEventListener('hashchange', function () {
         var id = (window.location.hash || '').replace('#', '');
         setActiveNav(id);
     });
+
+    // Contact form: submit to Netlify Forms via fetch, show inline status
+    var form = document.getElementById('contact-form');
+    var status = document.getElementById('form-status');
+
+    function encode(data) {
+        return Object.keys(data)
+            .map(function (key) {
+                return encodeURIComponent(key) + '=' + encodeURIComponent(data[key]);
+            })
+            .join('&');
+    }
+
+    if (form && status) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            var formData = new FormData(form);
+            var payload = {};
+            formData.forEach(function (value, key) { payload[key] = value; });
+
+            status.textContent = 'Sending…';
+            status.className = 'form-status';
+
+            fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: encode(payload)
+            })
+                .then(function () {
+                    status.textContent = 'Thanks — I\'ll get back to you soon.';
+                    status.className = 'form-status success';
+                    form.reset();
+                })
+                .catch(function () {
+                    status.textContent = 'Something went wrong. Email me directly instead.';
+                    status.className = 'form-status error';
+                });
+        });
+    }
 });

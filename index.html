@@ -3,98 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matty Maloni - Data Scientist</title>
+    <title>Matty Maloni · ML Researcher &amp; Data Scientist</title>
+    <meta name="description" content="Matthew Maloni: machine learning for signal and image processing, research verification systems, and drug discovery. B.S. Data Science, University of Florida.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308090d'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='26' font-weight='700' fill='%23d9a94c' text-anchor='middle'%3EMM%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="nav-backdrop"></div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>Matty Maloni</h2>
+                <a href="#home">matty<span>maloni</span></a>
             </div>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#publications" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <a href="Matthew_Maloni_Resume.pdf" class="nav-cta" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-arrow-down"></i> Resume
+            </a>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
-            <img src="images/Headshot.jpg" alt="Photo of Matty Maloni" class="hero-avatar">
+            <div class="hero-avatar-wrap">
+                <img src="images/headshot.jpg" alt="Photo of Matty Maloni" class="hero-avatar">
+            </div>
             <div class="hero-content">
+                <p class="eyebrow hero-eyebrow">Open to ML / data science roles, Summer 2026</p>
                 <h1 class="hero-title">
                     Hi, I'm <span class="highlight">Matty Maloni</span>
                 </h1>
-                <h2 class="hero-subtitle">Data Scientist & ML Researcher</h2>
+                <h2 class="hero-subtitle">Machine Learning Researcher &amp; Engineer</h2>
                 <p class="hero-description">
-                    I build machine learning models and AI systems for research and real-world applications,
-                    from medical imaging and scientific paper verification to spatial audio and drug discovery.
-                    I'm currently pursuing a Bachelor of Science in Data Science at the University of Florida.
+                    I build machine learning systems for signal and image processing, research verification,
+                    and drug discovery, spanning medical imaging, binaural audio, molecular dynamics, and
+                    financial modeling. Currently pursuing a B.S. in Data Science at the University of Florida.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
                 <div class="hero-social">
-                    <a href="https://github.com/mattymaloni" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/matthew-maloni" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:mmaloni1@ufl.edu"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/mattymaloni" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/matthew-maloni/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:matjmaloni@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-head">
+                <p class="eyebrow">About</p>
+            </div>
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a Data Science student at the University of Florida with research experience in machine learning,
-                        computer vision, and signal processing. I've contributed to projects spanning medical image classification,
-                        scientific paper verification systems, drug discovery pipelines, and spatial audio localization.
+                        I'm a Data Science student at the University of Florida with research experience across
+                        machine learning, computer vision, and signal processing. I've contributed to projects
+                        spanning medical image classification, scientific paper verification, computational drug
+                        discovery, and spatial audio localization. I also co-authored a paper accepted to the
+                        AAAI Spring Symposium (AAAI-MAKE) 2026.
                     </p>
                     <p>
-                        I enjoy building end-to-end solutions, from training deep learning models to deploying full-stack
-                        applications. Whether it's a production mobile app or a research prototype, I focus on making
-                        ML work actionable and accessible.
+                        I enjoy building end-to-end solutions, from training deep learning models to shipping
+                        full-stack applications. Whether it's a production iOS app, a quantitative finance tool,
+                        or a research prototype on HiPerGator, I focus on making ML work actionable and accessible
+                        to the people who need it.
                     </p>
                 </div>
-                <div class="education">
+                <div class="education card">
                     <h3>Education</h3>
                     <div class="education-item">
                         <h4>University of Florida</h4>
-                        <p>Bachelor of Science in Data Science</p>
-                        <p class="date">Expected May 2027 | GPA: 3.66</p>
+                        <p>B.S. in Data Science, College of Liberal Arts and Sciences</p>
+                        <p class="date">Expected December 2026 &middot; GPA: 3.62</p>
                         <p class="coursework">
-                            <strong>Relevant Coursework:</strong> Applied Machine Learning Systems, Programming 
-                            Fundamentals I & II, Programming with Data in R, Linear Regression, Probability, 
-                            Calculus II & III, Computational Math, Computational Linear Algebra
+                            <strong>Coursework:</strong> Applied Machine Learning Systems (EEL5934, graduate
+                            section), Data Structures &amp; Algorithms, Linear Algebra for Data Science,
+                            Computational Linear Algebra, Probability, Linear Regression, Calculus II &amp; III
                         </p>
                     </div>
                 </div>
@@ -103,48 +109,276 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="skills">
+    <section class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
+            <div class="section-head">
+                <p class="eyebrow">Toolbox</p>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <h3><i class="fas fa-code"></i> Languages</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">C++</span>
                         <span class="skill-tag">R</span>
                         <span class="skill-tag">SQL</span>
                         <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">Bash</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3><i class="fas fa-brain"></i> Machine Learning</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">Scikit-learn</span>
-                        <span class="skill-tag">Computer Vision</span>
-                        <span class="skill-tag">Signal Processing</span>
+                        <span class="skill-tag">TensorFlow/Keras</span>
+                        <span class="skill-tag">scikit-learn</span>
+                        <span class="skill-tag">CNNs</span>
+                        <span class="skill-tag">VAMPnets</span>
+                        <span class="skill-tag">Self-Supervised Learning</span>
+                        <span class="skill-tag">YOLOv8</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <h3><i class="fas fa-robot"></i> AI Systems</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Git & GitHub</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">React Native</span>
                         <span class="skill-tag">OpenAI API</span>
-                        <span class="skill-tag">Supabase</span>
+                        <span class="skill-tag">Claude / MCP</span>
+                        <span class="skill-tag">Knowledge Graphs</span>
+                        <span class="skill-tag">Retrieval & Verification</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-chart-line"></i> Research & Analysis</h3>
+                    <h3><i class="fas fa-chart-line"></i> Statistics &amp; Methods</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Deep Learning</span>
-                        <span class="skill-tag">NLP</span>
-                        <span class="skill-tag">Medical Imaging</span>
-                        <span class="skill-tag">Knowledge Graphs</span>
-                        <span class="skill-tag">Research Communication</span>
+                        <span class="skill-tag">Regression &amp; Lasso</span>
+                        <span class="skill-tag">PCA / ISOMAP</span>
+                        <span class="skill-tag">Time-Series</span>
+                        <span class="skill-tag">Event Studies</span>
+                        <span class="skill-tag">PageRank</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Data &amp; Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Supabase</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">HiPerGator / SLURM</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Web &amp; Mobile</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React Native</span>
+                        <span class="skill-tag">Expo</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue 3</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Experience</p>
+                <h2 class="section-title">Research &amp; Professional Experience</h2>
+            </div>
+
+            <p class="subsection-label">Research Experience</p>
+            <div class="entry-group">
+                <div class="entry-card card">
+                    <div class="entry-header">
+                        <div class="entry-title">
+                            <img src="images/uf_health.jpg" alt="" class="entry-logo">
+                            <div class="entry-title-text">
+                                <h3>Undergraduate Researcher</h3>
+                                <h4>Nettles Lab, UF Scripps Institute</h4>
+                            </div>
+                        </div>
+                        <div class="entry-meta">
+                            <span class="entry-date">Jan 2026 – May 2026</span>
+                            <span class="entry-location">Jupiter, FL</span>
+                        </div>
+                    </div>
+                    <ul class="entry-points">
+                        <li>Contributed to NIH-funded computational drug discovery research on the glucocorticoid receptor, applying deep learning to resolve receptor conformational dynamics.</li>
+                        <li>Adapted and ran the lab's streaming featurization pipeline on UF's HiPerGator cluster, converting molecular dynamics trajectories into learning-ready tensors across 17 receptor/ligand systems.</li>
+                        <li>Trained a VAMPnet (PyTorch/deeptime) mapping 2,952-dimensional backbone coordinates to three metastable conformational states, reaching a VAMP-2 score of 2.87 against a max of 3.0, validated with a Chapman–Kolmogorov test.</li>
+                    </ul>
+                </div>
+
+                <div class="entry-card card">
+                    <div class="entry-header">
+                        <div class="entry-title">
+                            <img src="images/SPS.png" alt="" class="entry-logo">
+                            <div class="entry-title-text">
+                                <h3>Research Board, Project Lead</h3>
+                                <h4>IEEE Signal Processing Society, UF Student Chapter</h4>
+                            </div>
+                        </div>
+                        <div class="entry-meta">
+                            <span class="entry-date">Sep 2025 – Present</span>
+                            <span class="entry-location">Gainesville, FL</span>
+                        </div>
+                    </div>
+                    <p class="entry-sub">Plato's Cave: Scientific Paper Verification</p>
+                    <ul class="entry-points">
+                        <li>Implemented node and edge scoring algorithms and trust-gating mechanisms for a knowledge-graph paper-verification system; curated a 149-paper evaluation dataset and ran 832 sampled DAGs through 6,480 scoring trials.</li>
+                        <li>Co-authored the resulting paper, accepted to the AAAI Spring Symposium (AAAI-MAKE) 2026 (see <a href="#publications" class="project-link" style="display:inline-flex;">Publications</a>).</li>
+                    </ul>
+                    <p class="entry-sub">Aude: Binaural Audio Scene Analysis &middot; Project Lead</p>
+                    <ul class="entry-points">
+                        <li>Founded and lead a five-member research group building biologically plausible binaural audio scene analysis for real-world sound-source localization and separation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="subsection-label">Professional Experience</p>
+            <div class="entry-group">
+                <div class="entry-card card">
+                    <div class="entry-header">
+                        <div class="entry-title">
+                            <img src="images/Kore.png" alt="" class="entry-logo">
+                            <div class="entry-title-text">
+                                <h3>Financial Engineering Intern</h3>
+                                <h4>Kore Capital</h4>
+                            </div>
+                        </div>
+                        <div class="entry-meta">
+                            <span class="entry-date">May 2026 – Present</span>
+                            <span class="entry-location">Boynton Beach, FL</span>
+                        </div>
+                    </div>
+                    <ul class="entry-points">
+                        <li>Co-developed a linear-regression equity factor model spanning momentum, value, quality, size, and growth baskets to improve portfolio hedging, using Bloomberg factor data.</li>
+                        <li>Integrated Claude MCP servers into the firm's .NET portfolio system and Excel add-in, condensing tax-lot, PnL, and reporting workflows into automated tools surfacing substrategy-level analytics.</li>
+                        <li>Consolidated 100K+ position, tax-lot, and trade records into a unified analytics layer, building per-campaign visualizations exposing trading patterns and adverse-move risk.</li>
+                    </ul>
+                </div>
+
+                <div class="entry-card card">
+                    <div class="entry-header">
+                        <div class="entry-title">
+                            <img src="images/icon.png" alt="" class="entry-logo">
+                            <div class="entry-title-text">
+                                <h3>Software Developer</h3>
+                                <h4>Pastry Art Wine Club</h4>
+                            </div>
+                        </div>
+                        <div class="entry-meta">
+                            <span class="entry-date">Oct 2025 – Present</span>
+                            <span class="entry-location">Sarasota, FL (Remote)</span>
+                        </div>
+                    </div>
+                    <ul class="entry-points">
+                        <li>Built and shipped a production iOS app in React Native and Expo for a wine retailer's subscription club, owning it end to end through App Store submission and release.</li>
+                        <li>Integrated the OpenAI API for wine-label photo analysis and a personalized recommendation chatbot, backed by fuzzy matching against the store's catalog on a Supabase/PostgreSQL backend.</li>
+                    </ul>
+                </div>
+
+                <div class="entry-card card">
+                    <div class="entry-header">
+                        <div class="entry-title">
+                            <img src="images/Querri.jpg" alt="" class="entry-logo">
+                            <div class="entry-title-text">
+                                <h3>Growth Intern (Part-time)</h3>
+                                <h4>Querri</h4>
+                            </div>
+                        </div>
+                        <div class="entry-meta">
+                            <span class="entry-date">Mar 2026 – May 2026</span>
+                            <span class="entry-location">Remote</span>
+                        </div>
+                    </div>
+                    <ul class="entry-points">
+                        <li>Produced product demos and video content for Querri's agentic AI data-analytics platform, generating 50,000+ organic views across Reddit content with no paid promotion.</li>
+                    </ul>
+                </div>
+
+                <div class="entry-card card">
+                    <div class="entry-header">
+                        <div class="entry-title">
+                            <img src="images/trustwell.png" alt="" class="entry-logo">
+                            <div class="entry-title-text">
+                                <h3>Data Science Intern</h3>
+                                <h4>Trustwell</h4>
+                            </div>
+                        </div>
+                        <div class="entry-meta">
+                            <span class="entry-date">Apr 2025 – Aug 2025</span>
+                            <span class="entry-location">Salem, OR (Remote)</span>
+                        </div>
+                    </div>
+                    <ul class="entry-points">
+                        <li>Compiled multi-region regulatory datasets and integrated the OpenAI API to improve response quality for Reggie, Trustwell's food-safety compliance assistant.</li>
+                        <li>Supported the frontend team's migration of the web application from AngularJS to Vue 3.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="subsection-label">Leadership</p>
+            <div class="entry-group">
+                <div class="entry-card card">
+                    <div class="entry-header">
+                        <div class="entry-title">
+                            <img src="images/Beta.jpg" alt="" class="entry-logo">
+                            <div class="entry-title-text">
+                                <h3>Internal Philanthropy Chair</h3>
+                                <h4>Beta Theta Pi, Gamma Xi Chapter</h4>
+                            </div>
+                        </div>
+                        <div class="entry-meta">
+                            <span class="entry-date">Aug 2025 – Present</span>
+                            <span class="entry-location">Gainesville, FL</span>
+                        </div>
+                    </div>
+                    <ul class="entry-points">
+                        <li>Directed Beta Bring It On 2026, the largest philanthropy event in UF fraternal life, as sole internal lead across a seven-month planning cycle.</li>
+                        <li>Led the campaign that raised a record $64,000 for the Alzheimer's Association and sold out the Phillips Center's 1,700 seats with 300+ participants across 19 paired teams.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section section-alt">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Research Output</p>
+                <h2 class="section-title">Publications</h2>
+            </div>
+            <div class="publication-card card">
+                <div class="publication-image">
+                    <img src="images/platos_cave_photo.png" alt="Plato's Cave knowledge graph visualization">
+                </div>
+                <div class="publication-content">
+                    <span class="publication-status"><i class="fas fa-check-circle"></i> Accepted</span>
+                    <h3>Plato's Cave: A Human-Centered Research Verification System</h3>
+                    <p class="publication-venue">AAAI Spring Symposium on Machine Learning and Knowledge Engineering (AAAI-MAKE), 2026</p>
+                    <p class="publication-authors">
+                        M. K. Maldaner, R. Valle, J. Kim, T. Sultan, P. Bhargava, <strong>M. Maloni</strong>, J.
+                        Courtney, H. Nguyen, A. Sawant, K. O'Connor, S. Wormald, and D. L. Woodard.
+                    </p>
+                    <p class="publication-abstract">
+                        A research verification system that extracts directed acyclic claim graphs from papers over
+                        a ten-role semantic ontology and assigns credibility scores to nodes and edges, with a
+                        trust-gating propagation mechanism in which low parent-node trust exponentially attenuates
+                        confidence in dependent child claims. Evaluated on 149 records under a K=8 &times; M=8
+                        resampling protocol yielding 832 sampled DAGs and 6,480 scored trials.
+                    </p>
+                    <div class="project-links">
+                        <a href="platos_cave_paper.pdf" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Paper</a>
+                        <a href="https://arxiv.org/abs/2603.23526" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> arXiv</a>
+                        <a href="https://github.com/matheusmaldaner/PlatosCave" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
                     </div>
                 </div>
             </div>
@@ -152,145 +386,74 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-head">
+                <p class="eyebrow">Selected Work</p>
+                <h2 class="section-title">Projects</h2>
+            </div>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/platos_cave_photo.png" alt="Plato's Cave knowledge graph visualization">
+                        <img src="images/portalpath.png" alt="PortalPath app visualization" loading="lazy">
                     </div>
                     <div class="project-content">
-                        <h3>Plato's Cave - Scientific Paper Verification</h3>
+                        <h3>PortalPath: Transfer Portal Rankings</h3>
                         <p>
-                            Contributed to a trust-propagating knowledge graph system for scientific paper verification,
-                            implementing scoring algorithms, edge confidence visualization, and trust-gating mechanisms.
-                            Compiled an evaluation dataset of 150+ papers and built testing pipelines validating node quality assessment.
-                            Co-authored research paper documenting evaluation methodology and performance benchmarks.
+                            End-to-end data pipeline over the CollegeFootballData API, condensing 726K raw
+                            statistical records into a PageRank-based prestige-diffusion model over a 5,201-edge
+                            inter-program transfer graph. Deployed with an interactive Dash and Bokeh dashboard.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Knowledge Graphs</span>
-                            <span class="tech-tag">NLP</span>
-                            <span class="tech-tag">Research</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/matheusmaldaner/PlatosCave" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
-                            <a href="platos_cave_paper.pdf" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Paper</a>
-                            <a href="https://arxiv.org/abs/2603.23526" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> arXiv</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/icon.png" alt="Pastry Art Wine Club app icon">
-                    </div>
-                    <div class="project-content">
-                        <h3>Pastry Art Wine Club iOS App</h3>
-                        <p>
-                            Developed and launched an iOS wine club application using React Native and Expo, featuring 
-                            exclusive wine selections and subscription management. Built a complete authentication system 
-                            and database architecture with Supabase, designed responsive UI components following iOS guidelines, 
-                            and managed the full App Store submission process.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Expo</span>
-                            <span class="tech-tag">Supabase</span>
-                            <span class="tech-tag">iOS Development</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://apps.apple.com/us/app/pastry-art-wine-club/id6754959938" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-app-store-ios"></i> App Store</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/portalpath.png" alt="PortalPath app visualization">
-                    </div>
-                    <div class="project-content">
-                        <h3>PortalPath</h3>
-                        <p>
-                            Built and deployed a full-stack web application tracking the college football transfer portal.
-                            Aggregates and visualizes transfer portal data, allowing users to explore how programs
-                            succeed in the portal and develop the players they bring in. Designed the architecture, implemented the backend, and shipped the live product.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Full Stack</span>
-                            <span class="tech-tag">Web Development</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Dash</span>
+                            <span class="tech-tag">PageRank</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/mattymaloni/PortalPath" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
-                            <a href="https://portalpath.onrender.com/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Website</a>
+                            <a href="https://portalpath.onrender.com/" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Site</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/bbio.webp" alt="Beta Bring It On 2026 philanthropy event">
+                        <img src="images/chest_examples.png" alt="Chest X-ray examples for CNN classification" loading="lazy">
                     </div>
                     <div class="project-content">
-                        <h3>Beta Bring It On 2026</h3>
+                        <h3>CNN Medical Image Classification</h3>
                         <p>
-                            Organized and led Beta Bring It On, Beta Theta Pi's annual spring philanthropy at the University of Florida
-                            benefiting the Alzheimer's Association. Oversaw a cheerleading competition where sororities paired with
-                            brothers to perform live routines at the Phillips Center on March 2nd, 2026. Broke the all-time fundraising
-                            record by raising over $63,000 for the Alzheimer's Association and sold out the Phillips Center.
+                            Compared four CNN architectures (249K–16.9M parameters) across chest X-ray and diabetic
+                            retinopathy classification, achieving 94.77% accuracy and 83.61% AUC on 14-disease
+                            classification over 78,468 images.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Event Leadership</span>
-                            <span class="tech-tag">Philanthropy</span>
-                            <span class="tech-tag">Fundraising</span>
+                            <span class="tech-tag">TensorFlow/Keras</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">HiPerGator</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://beta.crowdchange.co/56280" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Website</a>
+                            <a href="CNNs for Medical Image Classification.pdf" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Report</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/audio_project_image.webp" alt="Binaural audio system visualization">
-                    </div>
-                    <div class="project-content">
-                        <h3>Binaural Audio Systems</h3>
-                        <p>
-                            Leading research group exploring spatial audio localization and source separation using
-                            dual-microphone systems for real-time speech separation and sound position detection
-                            in acoustic environments.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Signal Processing</span>
-                            <span class="tech-tag">Audio ML</span>
-                            <span class="tech-tag">Research</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Jibby2k1/Aude" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/Ship_detections.jpg" alt="Satellite ship detection visualization">
+                        <img src="images/Ship_detections.jpg" alt="Satellite ship detection visualization" loading="lazy">
                     </div>
                     <div class="project-content">
                         <h3>Dimensionality Reduction for Satellite Ship Detection</h3>
                         <p>
-                            Applied advanced dimensionality reduction techniques to satellite imagery for improved ship 
-                            detection accuracy. Leveraged machine learning and computer vision methods to process 
-                            high-dimensional satellite data, reducing computational complexity while maintaining detection 
-                            performance for maritime surveillance applications.
+                            Benchmarked nine PCA/ISOMAP and classifier configurations on 4,000 satellite images,
+                            achieving 96.75% accuracy at 82&times; baseline throughput, while showing the
+                            top-accuracy model failed operationally in practice.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Computer Vision</span>
-                            <span class="tech-tag">Dimensionality Reduction</span>
-                            <span class="tech-tag">Satellite Imagery</span>
+                            <span class="tech-tag">scikit-learn</span>
+                            <span class="tech-tag">PCA / ISOMAP</span>
+                            <span class="tech-tag">HiPerGator</span>
                         </div>
                         <div class="project-links">
                             <a href="Dimensionality Reduction for Satellite Ship Detection.pdf" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Report</a>
@@ -300,64 +463,18 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/out3.jpg" alt="Automated Trading System preview">
+                        <img src="images/taxi_vs_rideshare.png" alt="NYC Yellow Taxi Earnings Analysis preview" loading="lazy">
                     </div>
                     <div class="project-content">
-                        <h3>Automated Trading System with Model-based Signal Ranking</h3>
+                        <h3>NYC Yellow Taxi Earnings Prediction</h3>
                         <p>
-                            Developed a comprehensive trading system by integrating a pretrained YOLOv8 candlestick 
-                            detection model with advanced backtesting, portfolio management, and automated daily 
-                            signal ranking capabilities.
+                            Applied linear and Lasso regression with 5-fold cross-validation to 2023 NYC taxi trip
+                            records, predicting fares (R&sup2; = 0.93) and tips (R&sup2; = 0.55) with interpretable,
+                            actionable coefficients for drivers.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">YOLOv8</span>
-                            <span class="tech-tag">Financial Modeling</span>
-                            <span class="tech-tag">API Integration</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/mattymaloni/ChartScanAIAutomatedTrader" class="project-link"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/chest_examples.png" alt="Chest X-ray examples for CNN classification">
-                    </div>
-                    <div class="project-content">
-                        <h3>CNN Medical Image Classification</h3>
-                        <p>
-                            Architected and compared 4 CNN models using TensorFlow Keras for multi-label pathology detection,
-                            achieving 94.77% accuracy and 83% AUC on 14-disease classification with 78K chest X-ray images.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">Deep Learning</span>
-                            <span class="tech-tag">Computer Vision</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="CNNs for Medical Image Classification.pdf" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Paper</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/taxi_vs_rideshare.png" alt="NYC Yellow Taxi Earnings Analysis preview">
-                    </div>
-                    <div class="project-content">
-                        <h3>Improving NYC Yellow Taxi Earnings through Predictive Modeling</h3>
-                        <p>
-                            Applied Linear and Lasso Regression with cross-validation to 2023 NYC Yellow Taxi data
-                            to predict fares and tips. Identified key drivers including trip distance, timing, and pickup
-                            location to provide actionable strategies for optimizing driver earnings in a competitive rideshare market.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Scikit-learn</span>
-                            <span class="tech-tag">Regression Analysis</span>
+                            <span class="tech-tag">scikit-learn</span>
+                            <span class="tech-tag">Regression</span>
                             <span class="tech-tag">Feature Engineering</span>
                         </div>
                         <div class="project-links">
@@ -368,23 +485,41 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/SuperfundSearch.png" alt="Data Science for Sustainable Development preview">
+                        <img src="images/out3.jpg" alt="Automated Trading System preview" loading="lazy">
                     </div>
                     <div class="project-content">
-                        <h3>Data Science for Sustainable Development</h3>
+                        <h3>ChartScanAI Automated Trader</h3>
                         <p>
-                            Created an interactive mobile web app mapping Superfund sites and long-term pollution 
-                            locations in Florida. Features demographic analysis and local environmental impact 
-                            visualization with real-time data integration.
+                            Integrated a pretrained YOLOv8 candlestick-pattern detector into a daily screening
+                            pipeline for 500+ equities, with historical backtesting and paper-trade execution via
+                            the Alpaca API.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">YOLOv8</span>
+                            <span class="tech-tag">Alpaca API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/mattymaloni/ChartScanAIAutomatedTrader" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/SuperfundSearch.png" alt="Superfund site mapping preview" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Superfund Site Mapping</h3>
+                        <p>
+                            Built an interactive mobile web app mapping Superfund and long-term pollution sites
+                            across Florida on a GIS layer, joining site locations to demographic data for
+                            environmental-justice research with Data Science for Sustainable Development.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">JavaScript</span>
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">GIS</span>
-                            <span class="tech-tag">Data Visualization</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/dssd-gnv/artificial-reefs" class="project-link"><i class="fab fa-github"></i> Code</a>
                         </div>
                     </div>
                 </div>
@@ -394,14 +529,13 @@
                         <i class="fas fa-user-secret project-icon"></i>
                     </div>
                     <div class="project-content">
-                        <h3>Facial Recognition Anonymization Project</h3>
+                        <h3>Facial Recognition Anonymization</h3>
                         <p>
-                            Developed and analyzed different types of facial recognition anonymization systems 
-                            to privatize faces in pictures from facial recognition software while preserving 
-                            important attributes such as emotion.
+                            Developed and evaluated facial anonymization approaches that obscure identity against
+                            facial-recognition models while preserving semantically important attributes such as
+                            emotional expression.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Python</span>
                             <span class="tech-tag">PyTorch</span>
                             <span class="tech-tag">OpenCV</span>
                             <span class="tech-tag">Computer Vision</span>
@@ -411,90 +545,47 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <video class="project-video" controls preload="none">
-                            <source src="videos/MineSweeperDemo.mp4" type="video/mp4">
-                            Your browser does not support the video tag. Video demo coming soon.
+                        <video class="project-video" controls preload="none" poster="images/Ship_detections.jpg">
+                            <source src="videos/MinesweeperDemo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="project-content">
                         <h3>Minesweeper in C++</h3>
                         <p>
-                            Implemented a complete Minesweeper game featuring procedural board generation, flood-fill
-                            reveal mechanics, flagging, and robust win/lose detection. Built with modern C++ and
-                            organized using OOP for clarity and maintainability.
+                            Implemented a complete Minesweeper game with procedural board generation, recursive
+                            flood-fill reveal, flagging, and win/loss detection, structured with object-oriented
+                            design.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">C++</span>
-                            <span class="tech-tag">Algorithms</span>
-                            <span class="tech-tag">OOP</span>
                             <span class="tech-tag">CMake</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="videos/MineSweeperDemo.mp4" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <span class="tech-tag">OOP</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="experience-card">
-                <div class="exp-header">
-                    <div class="exp-title">
-                        <img src="images/uf_health.jpg" alt="UF Health logo" class="exp-logo">
-                        <h3>Undergraduate Researcher</h3>
-                        <h4>Nettles Lab, UF Scripps Institute</h4>
-                    </div>
-                    <div class="exp-meta">
-                        <span class="exp-date">January 2026 - Present</span>
-                        <span class="exp-location">Jupiter, FL</span>
-                    </div>
-                </div>
-                <ul class="exp-points">
-                    <li>Contributing to NIH-funded drug discovery research targeting steroid hormone receptors</li>
-                    <li>Implementing self-supervised autoencoder pipeline to optimize predictive models across molecular datasets</li>
-                </ul>
-            </div>
-            <div class="experience-card">
-                <div class="exp-header">
-                    <div class="exp-title">
-                        <img src="images/trustwell.png" alt="Trustwell logo" class="exp-logo">
-                        <h3>Data Science Intern</h3>
-                        <h4>Trustwell</h4>
-                    </div>
-                    <div class="exp-meta">
-                        <span class="exp-date">April 2025 - Aug 2025</span>
-                        <span class="exp-location">Salem, OR (Remote)</span>
-                    </div>
-                </div>
-                <ul class="exp-points">
-                    <li>Collaborated on researching and training Trustwell's AI model, Reggie, contributing to data preparation, model training, and evaluation</li>
-                    <li>Contributed to model building with hands-on experience across training and deployment</li>
-                    <li>Supported frontend team migrating the web app from Angular to Vue 3</li>
-                </ul>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-head">
+                <p class="eyebrow">Get In Touch</p>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Let's Connect</h3>
                     <p>
-                        I’m open to opportunities in data science, machine learning, and financial analytics, particularly  
-                        roles where I can apply ML models to real-world decision-making and create tools that make insights accessible and actionable.
+                        I'm open to opportunities in data science, machine learning, and financial analytics,
+                        particularly roles where I can apply ML models to real-world decision-making and build
+                        tools that make insights accessible and actionable.
                     </p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>mmaloni1@ufl.edu</span>
+                            <span>matjmaloni@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
@@ -506,13 +597,17 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/mattymaloni" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/mattymaloni" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:mmaloni1@ufl.edu"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/mattymaloni" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/matthew-maloni/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:matjmaloni@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form>
+                <div class="contact-form card">
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p style="position:absolute; left:-9999px;">
+                            <label>Don't fill this out: <input name="bot-field"></label>
+                        </p>
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Your Name" required>
                         </div>
@@ -523,6 +618,7 @@
                             <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p class="form-status" id="form-status" role="status"></p>
                     </form>
                 </div>
             </div>
@@ -532,7 +628,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Matty Maloni. All rights reserved.</p>
+            <p>&copy; 2026 Matty Maloni. All rights reserved.</p>
+            <a href="#home" class="footer-back">Back to top ↑</a>
         </div>
     </footer>
 
