@@ -271,6 +271,7 @@ section[id] {
   height: 168px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 30%;
   border: 3px solid var(--surface);
   box-shadow: 0 0 0 1px var(--border-strong), 0 20px 40px -12px rgba(0, 0, 0, 0.6);
 }
@@ -459,6 +460,10 @@ section[id] {
   text-transform: uppercase;
   color: var(--text-faint);
   margin-bottom: 1.1rem;
+}
+
+.education-item + .education-item {
+  margin-top: 1.3rem;
 }
 
 .education-item h4 {
