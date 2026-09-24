@@ -1,0 +1,140 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[left=0.6in,right=0.6in,top=0.25in,bottom=0.25in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{textcomp}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  pdftitle={Matthew Maloni - Resume},
+  pdfauthor={Matthew Maloni}
+}
+
+\setlength{\parindent}{0pt}
+\linespread{0.915}
+
+% ---- Section headings ---------------------------------------------------
+\newcommand{\rsection}[1]{%
+  \vspace{0.3em}%
+  \noindent{\bfseries\scshape #1}\\[-0.42em]
+  \noindent\rule{\textwidth}{0.6pt}\par\vspace{0.12em}%
+}
+
+% ---- Tight list ---------------------------------------------------------
+\newenvironment{tight}{%
+  \begin{list}{\textbullet}{%
+    \setlength{\leftmargin}{1.1em}%
+    \setlength{\labelwidth}{0.8em}%
+    \setlength{\labelsep}{0.4em}%
+    \setlength{\itemsep}{0.03em}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\topsep}{0.09em}%
+    \setlength{\partopsep}{0pt}%
+    \setlength{\listparindent}{0pt}%
+  }%
+}{\end{list}}
+
+% ---- Helpers ------------------------------------------------------------
+\newcommand{\entry}[4]{%
+  \vspace{0.12em}%
+  \noindent\textbf{#1}\hfill\textit{#2}\\[0.02em]
+  \noindent\textit{#3}\hfill{\small #4}\par\vspace{0.02em}%
+}
+
+\newcommand{\proj}[2]{%
+  \vspace{0.15em}%
+  \noindent\textbf{#1}\hfill{\small #2}\par\vspace{0.0em}%
+}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% ---- Header -------------------------------------------------------------
+\begin{center}
+  {\LARGE\bfseries Matthew Maloni}\\[0.35em]
+  {\small
+    Gainesville, FL \ $\cdot$ \ (941) 221-2153 \ $\cdot$ \ \href{mailto:matjmaloni@gmail.com}{\mbox{matjmaloni@gmail.com}}\\[0.2em]
+    \href{https://matthewmaloni.netlify.app}{matthewmaloni.netlify.app} \ $\cdot$ \
+    \href{https://github.com/mattymaloni}{github.com/mattymaloni} \ $\cdot$ \
+    \href{https://www.linkedin.com/in/matthew-maloni/}{linkedin.com/in/matthew-maloni}
+  }
+\end{center}
+
+% ---- Education ------------------------------------------------------------
+\rsection{Education}
+
+\entry{University of Florida, Herbert Wertheim College of Engineering}{Incoming Spring 2027}{M.S. in Electrical and Computer Engineering}{Gainesville, FL}
+
+\entry{University of Florida, College of Liberal Arts and Sciences}{August 2023 -- December 2026}{Bachelor of Science in Data Science}{Gainesville, FL}
+GPA: 3.62 / 4.00 \ $\cdot$ \ Dean's List: Fall 2023, Fall 2025\\
+\textbf{Relevant Coursework:} Applied Machine Learning Systems; Data Structures \& Algorithms; Linear Algebra for Data Science; Probability; Linear Regression; Programming with Data in R; Digital Logic; Information and Database Systems
+
+% ---- Work Experience --------------------------------------------------
+\rsection{Work Experience}
+
+\entry{Kore Capital}{May 2026 -- July 2026}{Financial Engineering Intern}{Boynton Beach, FL}
+\begin{tight}
+  \item Co-developed a linear-regression equity factor model spanning momentum, value, quality, size, and growth baskets, applying $R^2$ and autocorrelation testing on Bloomberg data to evaluate hedge quality and factor attribution.
+  \item Integrated Claude MCP servers into the firm's .NET portfolio system and Excel add-in, condensing tax-lot, PnL, and reporting workflows into automated tools that surface substrategy-level analytics.
+  \item Consolidated 100K+ position, tax-lot, and trade records into a unified analytics layer, building per-campaign visualizations that expose trading patterns and adverse-move risk.
+\end{tight}
+
+\entry{Pastry Art Wine Club}{October 2025 -- Present}{Software Developer}{Sarasota, FL (Remote)}
+\begin{tight}
+  \item Designed and built a production iOS app for a wine retailer's subscription club, from initial requirements through App Store review and release, fixing production bugs and shipping updates against real customer usage.
+  \item Built a wine-label scanner that reads a user's photo and matches it to the store's catalog in a single AI call, and a recommendation chatbot that builds user memories from how they interact with the app and its AI.
+\end{tight}
+
+\entry{Trustwell}{April 2025 -- August 2025}{Data Science Intern}{Salem, OR (Remote)}
+\begin{tight}
+  \item Compiled multi-region regulatory datasets and integrated the OpenAI API to improve response quality for Trustwell's food-safety compliance assistant; supported the frontend team's AngularJS-to-Vue-3 migration.
+\end{tight}
+
+% ---- Research & Leadership --------------------------------------------
+\rsection{Research \& Leadership}
+
+\entry{IEEE Signal Processing Society, UF Student Chapter}{September 2025 -- Present}{Research Board, Project Lead}{Gainesville, FL}
+\begin{tight}
+  \item Implemented scoring and trust-gating algorithms for Plato's Cave, a knowledge-graph paper-verification system aggregating paper-level integrity from six graph metrics, including bridge coverage, best-path reliability, max-flow redundancy, and min-cut fragility; curated a 104-PDF evaluation dataset and co-authored the resulting paper, accepted to the AAAI Spring Symposium.
+  \item Founded and lead a five-member research group building binaural (dual-microphone) audio scene analysis for real-world sound-source localization and separation.
+\end{tight}
+
+\entry{Nettles Lab, UF Scripps Institute}{January 2026 -- May 2026}{Undergraduate Researcher}{Jupiter, FL}
+\begin{tight}
+  \item Trained a VAMPnet in PyTorch mapping molecular dynamics trajectories to metastable conformational states for NIH-funded glucocorticoid receptor drug discovery, reaching a VAMP-2 score of 2.87 against a max of 3.0.
+\end{tight}
+
+\entry{Beta Theta Pi, Gamma Xi Chapter}{August 2025 -- Present}{Internal Philanthropy Chair}{Gainesville, FL}
+\begin{tight}
+  \item Directed Beta Bring It On 2026, raising a record \$64,000 for the Alzheimer's Association and selling out the Phillips Center's 1,700 seats with 300+ participants across 19 teams.
+\end{tight}
+
+% ---- Projects -----------------------------------------------------------
+\rsection{Projects}
+
+\proj{PortalPath: Graph-Based Ranking for the CFB Transfer Portal}{March 2026 \ $\cdot$ \ Team of 3 \ $\cdot$ \ Python, C++, Dash}
+\begin{tight}
+  \item Built an end-to-end pipeline over the CollegeFootballData API condensing 726,000 raw records into 75,492 clean player-seasons; designed a PageRank-based prestige-diffusion model over a 5,201-edge transfer graph ranking 132 programs.
+\end{tight}
+
+\proj{CNN Medical Image Classification}{November 2025 \ $\cdot$ \ TensorFlow/Keras, HiPerGator}
+\begin{tight}
+  \item Compared four CNN architectures on chest X-ray and diabetic retinopathy classification, achieving 94.77\% accuracy and 83.61\% AUC across 14 thoracic pathologies over 78,468 images.
+\end{tight}
+
+% ---- Skills ---------------------------------------------------------
+\rsection{Skills}
+
+\textbf{Languages:} Python, Java, C++, R, SQL, MATLAB, Visual Basic, HTML/CSS, Bash \\
+\textbf{Machine Learning:} PyTorch, TensorFlow/Keras, scikit-learn, deeptime, CNNs, VAMPnets/Markov state models, self-supervised learning, random forests, k-means, regularized regression, cross-validation, PCA/ISOMAP, feature engineering \\
+\textbf{AI Systems:} OpenAI API, Claude/MCP, LLM agent design, retrieval-augmented pipelines, vector databases, knowledge graphs \\
+\textbf{Infrastructure \& Computing:} AWS, PostgreSQL, Supabase, Docker, Git/GitHub, HPC (SLURM, HiPerGator)
+
+\end{document}
