@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects · Matty Maloni</title>
+    <meta name="description" content="Machine learning and data projects by Matty Maloni: PortalPath, medical image classification, satellite ship detection, and more.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231d3fd6'/%3E%3Ctext x='32' y='43' font-family='monospace' font-size='26' font-weight='700' fill='white' text-anchor='middle'%3EMM%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <a href="index.html" class="brand" aria-label="Matty Maloni, home">
+                Matty Maloni
+            </a>
+            <button class="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav class="nav" id="site-nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="experience.html">Experience</a>
+                <a href="projects.html" aria-current="page">Projects</a>
+                <a href="research.html">Research</a>
+                <a href="about.html">About</a>
+                <a href="Matthew_Maloni_Resume.pdf" class="resume" target="_blank" rel="noopener noreferrer">Resume ↓</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-head">
+        <div class="wrap">
+            <p class="label"><b>03</b> / Projects</p>
+            <h1>Selected <em>projects</em></h1>
+            <p class="lede">Models, pipelines, and tools I’ve built for coursework, research groups, and on my own. Numbers are from the reports.</p>
+        </div>
+    </section>
+    <main>
+    <section class="proj-list">
+        <div class="wrap">
+        <article class="proj">
+            <figure class="proj-fig" style="margin:0">
+                <img src="images/portalpath.png" alt="PortalPath app visualization" loading="lazy">
+            </figure>
+            <div>
+                <div class="metric "><strong>5,201</strong><span>edges in the transfer graph</span></div>
+                <h2>PortalPath: Transfer Portal Rankings</h2>
+                <p>End-to-end data pipeline over the CollegeFootballData API, condensing 726K raw statistical records into a PageRank-based prestige-diffusion model over an inter-program transfer graph. Deployed with an interactive Dash and Bokeh dashboard.</p>
+                <ul class="tags"><li>Python</li><li>C++</li><li>Dash</li><li>PageRank</li></ul>
+                <div class="links">
+                <a class="arrow-link" href="https://github.com/mattymaloni/PortalPath" target="_blank" rel="noopener noreferrer">Code ↗</a>
+                <a class="arrow-link" href="https://portalpath.onrender.com/" target="_blank" rel="noopener noreferrer">Live site ↗</a>
+            </div>
+            </div>
+        </article>
+        <article class="proj">
+            <figure class="proj-fig" style="margin:0">
+                <img src="images/chest_examples.png" alt="Chest X-ray examples for CNN classification" loading="lazy">
+            </figure>
+            <div>
+                <div class="metric r"><strong>94.77%</strong><span>accuracy, 14-disease chest X-rays</span></div>
+                <h2>CNN Medical Image Classification</h2>
+                <p>Compared four CNN architectures (249K–16.9M parameters) across chest X-ray and diabetic retinopathy classification, reaching 94.77% accuracy and 83.61% AUC on 14-disease classification over 78,468 images.</p>
+                <ul class="tags"><li>TensorFlow/Keras</li><li>Computer vision</li><li>HiPerGator</li></ul>
+                <div class="links">
+                <a class="arrow-link" href="CNNs for Medical Image Classification.pdf" target="_blank" rel="noopener noreferrer">Report ↗</a>
+            </div>
+            </div>
+        </article>
+        <article class="proj">
+            <figure class="proj-fig" style="margin:0">
+                <img src="images/Ship_detections.jpg" alt="Satellite ship detection visualization" loading="lazy">
+            </figure>
+            <div>
+                <div class="metric y"><strong>82×</strong><span>baseline throughput at 96.75% accuracy</span></div>
+                <h2>Dimensionality Reduction for Satellite Ship Detection</h2>
+                <p>Benchmarked nine PCA/ISOMAP and classifier configurations on 4,000 satellite images, reaching 96.75% accuracy at 82× baseline throughput, while showing the top-accuracy model failed operationally in practice.</p>
+                <ul class="tags"><li>scikit-learn</li><li>PCA / ISOMAP</li><li>HiPerGator</li></ul>
+                <div class="links">
+                <a class="arrow-link" href="Dimensionality Reduction for Satellite Ship Detection.pdf" target="_blank" rel="noopener noreferrer">Report ↗</a>
+            </div>
+            </div>
+        </article>
+        <article class="proj">
+            <figure class="proj-fig" style="margin:0">
+                <img src="images/taxi_vs_rideshare.png" alt="NYC Yellow Taxi Earnings Analysis preview" loading="lazy">
+            </figure>
+            <div>
+                <div class="metric "><strong>R² 0.93</strong><span>fare prediction, 5-fold CV</span></div>
+                <h2>NYC Yellow Taxi Earnings Prediction</h2>
+                <p>Applied linear and Lasso regression with 5-fold cross-validation to 2023 NYC taxi trip records, predicting fares (R² = 0.93) and tips (R² = 0.55) with interpretable, actionable coefficients for drivers.</p>
+                <ul class="tags"><li>scikit-learn</li><li>Regression</li><li>Feature engineering</li></ul>
+                <div class="links">
+                <a class="arrow-link" href="Improving_NYC_Yellow_Taxi_Earnings.pdf" target="_blank" rel="noopener noreferrer">Report ↗</a>
+            </div>
+            </div>
+        </article>
+        <article class="proj">
+            <figure class="proj-fig" style="margin:0">
+                <img src="images/out3.jpg" alt="Automated Trading System preview" loading="lazy">
+            </figure>
+            <div>
+                <div class="metric r"><strong>500+</strong><span>equities screened daily</span></div>
+                <h2>ChartScanAI Automated Trader</h2>
+                <p>Integrated a pretrained YOLOv8 candlestick-pattern detector into a daily screening pipeline for 500+ equities, with historical backtesting and paper-trade execution via the Alpaca API.</p>
+                <ul class="tags"><li>Python</li><li>YOLOv8</li><li>Alpaca API</li></ul>
+                <div class="links">
+                <a class="arrow-link" href="https://github.com/mattymaloni/ChartScanAIAutomatedTrader" target="_blank" rel="noopener noreferrer">Code ↗</a>
+            </div>
+            </div>
+        </article>
+        <article class="proj">
+            <figure class="proj-fig" style="margin:0">
+                <img src="images/SuperfundSearch.png" alt="Superfund site mapping preview" loading="lazy">
+            </figure>
+            <div>
+                
+                <h2>Superfund Site Mapping</h2>
+                <p>Built an interactive mobile web app mapping Superfund and long-term pollution sites across Florida on a GIS layer, joining site locations to demographic data for environmental-justice research with Data Science for Sustainable Development.</p>
+                <ul class="tags"><li>JavaScript</li><li>React</li><li>GIS</li></ul>
+                
+            </div>
+        </article>
+        <article class="proj">
+            <figure class="proj-fig" style="margin:0">
+                <svg viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="Pixelated, anonymized face" preserveAspectRatio="xMidYMid meet"><rect x="156" y="30" width="22" height="24" fill="#cfcfcf"/><rect x="178" y="30" width="22" height="24" fill="#cfcfcf"/><rect x="200" y="30" width="22" height="24" fill="#cfcfcf"/><rect x="222" y="30" width="22" height="24" fill="#cfcfcf"/><rect x="244" y="30" width="22" height="24" fill="#cfcfcf"/><rect x="134" y="54" width="22" height="24" fill="#cfcfcf"/><rect x="156" y="54" width="22" height="24" fill="#9a9a9a"/><rect x="178" y="54" width="22" height="24" fill="#9a9a9a"/><rect x="200" y="54" width="22" height="24" fill="#9a9a9a"/><rect x="222" y="54" width="22" height="24" fill="#9a9a9a"/><rect x="244" y="54" width="22" height="24" fill="#9a9a9a"/><rect x="266" y="54" width="22" height="24" fill="#cfcfcf"/><rect x="112" y="78" width="22" height="24" fill="#cfcfcf"/><rect x="134" y="78" width="22" height="24" fill="#9a9a9a"/><rect x="156" y="78" width="22" height="24" fill="#9a9a9a"/><rect x="178" y="78" width="22" height="24" fill="#9a9a9a"/><rect x="200" y="78" width="22" height="24" fill="#9a9a9a"/><rect x="222" y="78" width="22" height="24" fill="#9a9a9a"/><rect x="244" y="78" width="22" height="24" fill="#9a9a9a"/><rect x="266" y="78" width="22" height="24" fill="#9a9a9a"/><rect x="288" y="78" width="22" height="24" fill="#cfcfcf"/><rect x="90" y="102" width="22" height="24" fill="#cfcfcf"/><rect x="112" y="102" width="22" height="24" fill="#9a9a9a"/><rect x="134" y="102" width="22" height="24" fill="#9a9a9a"/><rect x="156" y="102" width="22" height="24" fill="#9a9a9a"/><rect x="178" y="102" width="22" height="24" fill="#9a9a9a"/><rect x="200" y="102" width="22" height="24" fill="#9a9a9a"/><rect x="222" y="102" width="22" height="24" fill="#9a9a9a"/><rect x="244" y="102" width="22" height="24" fill="#9a9a9a"/><rect x="266" y="102" width="22" height="24" fill="#9a9a9a"/><rect x="288" y="102" width="22" height="24" fill="#9a9a9a"/><rect x="310" y="102" width="22" height="24" fill="#cfcfcf"/><rect x="90" y="126" width="22" height="24" fill="#cfcfcf"/><rect x="112" y="126" width="22" height="24" fill="#9a9a9a"/><rect x="134" y="126" width="22" height="24" fill="#111111"/><rect x="156" y="126" width="22" height="24" fill="#9a9a9a"/><rect x="178" y="126" width="22" height="24" fill="#9a9a9a"/><rect x="200" y="126" width="22" height="24" fill="#9a9a9a"/><rect x="222" y="126" width="22" height="24" fill="#9a9a9a"/><rect x="244" y="126" width="22" height="24" fill="#111111"/><rect x="266" y="126" width="22" height="24" fill="#9a9a9a"/><rect x="288" y="126" width="22" height="24" fill="#9a9a9a"/><rect x="310" y="126" width="22" height="24" fill="#cfcfcf"/><rect x="90" y="150" width="22" height="24" fill="#cfcfcf"/><rect x="112" y="150" width="22" height="24" fill="#9a9a9a"/><rect x="134" y="150" width="22" height="24" fill="#9a9a9a"/><rect x="156" y="150" width="22" height="24" fill="#9a9a9a"/><rect x="178" y="150" width="22" height="24" fill="#9a9a9a"/><rect x="200" y="150" width="22" height="24" fill="#9a9a9a"/><rect x="222" y="150" width="22" height="24" fill="#9a9a9a"/><rect x="244" y="150" width="22" height="24" fill="#9a9a9a"/><rect x="266" y="150" width="22" height="24" fill="#9a9a9a"/><rect x="288" y="150" width="22" height="24" fill="#9a9a9a"/><rect x="310" y="150" width="22" height="24" fill="#cfcfcf"/><rect x="90" y="174" width="22" height="24" fill="#cfcfcf"/><rect x="112" y="174" width="22" height="24" fill="#9a9a9a"/><rect x="134" y="174" width="22" height="24" fill="#9a9a9a"/><rect x="156" y="174" width="22" height="24" fill="#9a9a9a"/><rect x="178" y="174" width="22" height="24" fill="#9a9a9a"/><rect x="200" y="174" width="22" height="24" fill="#111111"/><rect x="222" y="174" width="22" height="24" fill="#111111"/><rect x="244" y="174" width="22" height="24" fill="#9a9a9a"/><rect x="266" y="174" width="22" height="24" fill="#9a9a9a"/><rect x="288" y="174" width="22" height="24" fill="#9a9a9a"/><rect x="310" y="174" width="22" height="24" fill="#cfcfcf"/><rect x="112" y="198" width="22" height="24" fill="#cfcfcf"/><rect x="134" y="198" width="22" height="24" fill="#9a9a9a"/><rect x="156" y="198" width="22" height="24" fill="#9a9a9a"/><rect x="178" y="198" width="22" height="24" fill="#9a9a9a"/><rect x="200" y="198" width="22" height="24" fill="#9a9a9a"/><rect x="222" y="198" width="22" height="24" fill="#9a9a9a"/><rect x="244" y="198" width="22" height="24" fill="#9a9a9a"/><rect x="266" y="198" width="22" height="24" fill="#9a9a9a"/><rect x="288" y="198" width="22" height="24" fill="#cfcfcf"/><rect x="134" y="222" width="22" height="24" fill="#cfcfcf"/><rect x="156" y="222" width="22" height="24" fill="#9a9a9a"/><rect x="178" y="222" width="22" height="24" fill="#9a9a9a"/><rect x="200" y="222" width="22" height="24" fill="#9a9a9a"/><rect x="222" y="222" width="22" height="24" fill="#9a9a9a"/><rect x="244" y="222" width="22" height="24" fill="#9a9a9a"/><rect x="266" y="222" width="22" height="24" fill="#cfcfcf"/><rect x="156" y="246" width="22" height="24" fill="#cfcfcf"/><rect x="178" y="246" width="22" height="24" fill="#cfcfcf"/><rect x="200" y="246" width="22" height="24" fill="#cfcfcf"/><rect x="222" y="246" width="22" height="24" fill="#cfcfcf"/><rect x="244" y="246" width="22" height="24" fill="#cfcfcf"/></svg>
+            </figure>
+            <div>
+                
+                <h2>Facial Recognition Anonymization</h2>
+                <p>Developed and evaluated facial anonymization approaches that obscure identity against facial-recognition models while preserving semantically important attributes such as emotional expression.</p>
+                <ul class="tags"><li>PyTorch</li><li>OpenCV</li><li>Computer vision</li></ul>
+                
+            </div>
+        </article>
+        <article class="proj">
+            <figure class="proj-fig" style="margin:0">
+                <video controls preload="none" poster="images/Ship_detections.jpg"><source src="videos/MinesweeperDemo.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+            </figure>
+            <div>
+                
+                <h2>Minesweeper in C++</h2>
+                <p>Implemented a complete Minesweeper game with procedural board generation, recursive flood-fill reveal, flagging, and win/loss detection, structured with object-oriented design.</p>
+                <ul class="tags"><li>C++</li><li>CMake</li><li>OOP</li></ul>
+                
+            </div>
+        </article>
+        </div>
+    </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p class="mono">© 2026 Matty Maloni · Gainesville, FL</p>
+            <nav aria-label="Footer"><a href="experience.html">Experience</a> <a href="projects.html">Projects</a> <a href="research.html">Research</a> <a href="about.html">About</a></nav>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
